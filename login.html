@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(to right,#010202,#164d50);
+display:flex;
+background-image: url(https://wallpapers.com/images/hd/rose-bouquet-pictures-2dwtcmkj8vhme47h.jpg);
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.login-box{
+background:#e0dcdc;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+width:320px;
+text-align:center;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:8px 0;
+border-radius:5px;
+border:1px solid gray;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#2094b1;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#01cbe6;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>Login</h2>
+
+<form action="index.html">
+
+<!-- Indian Phone Number -->
+<input type="tel"
+placeholder="Phone Number"
+pattern="[6-9]{1}[0-9]{9}"
+title="Enter valid 10 digit Indian phone number"
+required>
+
+<!-- Email -->
+<input type="email"
+placeholder="Email ID"
+required>
+
+<!-- Strong Password -->
+<input type="password"
+placeholder="Strong Password"
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+title="Password must contain uppercase, lowercase and number"
+required>
+
+<!-- OTP -->
+<input type="text"
+placeholder="Enter OTP">
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
